@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Current Date and Time</h1>
+    <div id="dateTimeDisplay"></div>
+    <br>
+    <br>
+    <h1>Enter Your Name</h1>
+    <form onsubmit="event.preventDefault(); greetUser(firstName.value, lastName.value);">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        <button type="submit">Greet Me</button>
+    </form>
+
+    <br>
+    <br>
+    <h1>Utility Functions</h1>
+    <div id="dateTimeDisplay"></div>
+    <button onclick="greetUser('Jane', 'Doe')">Greet User</button>
+    <button onclick="addNumbers()">Add Numbers</button>
+<br>
+<br>
+
+<h1>JavaScript Calculator</h1>
+    <div id="dateTimeDisplay"></div>
+    <button onclick="calculator()">Run Calculator</button>
+    <br>
+    <br>
+    <h1>Factorial Calculator</h1>
+  <p>Enter a number to calculate its factorial:</p>
+  <input type="number" id="numberInput" min="0">
+  <button onclick="displayFactorial()">Calculate Factorial</button>
+    <p id="result"></p>
+
+
+    <br>
+    <br>
+    <h1>Counting Function</h1>
+    <p>Enter the start and end numbers to display the counting:</p>
+        <input type="number" id="startInput" placeholder="Start number">
+    <input type="number" id="endInput" placeholder="End number">
+        <button onclick="displayCounting()">Display Counting</button>
+        <p id="result"></p>
+
+        <br>
+        <br>
+        <h1>Hypotenuse Calculator</h1>
+  <p>Enter the base and perpendicular of a right-angled triangle:</p>
+    <input type="number" id="baseInput" placeholder="Base" required>
+  <input type="number" id="perpendicularInput" placeholder="Perpendicular" required>
+    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+    <p id="result"></p>
+
+    <br>
+    <br>
+    <h1>Rectangle Area Calculator</h1>
+    <p>Click the buttons to calculate the area of a rectangle:</p>
+    <button onclick="areaWithValues()">Calculate Area with Values</button>
+    <p id="resultValue"></p>
+    <button onclick="areaWithVariables()">Calculate Area with Variables</button>
+    <p id="resultVariables"></p>
+
+    <br><br>
+    <br>
+    <h1>Palindrome Checker</h1>
+    <p>Enter a word or phrase to check if it is a palindrome:</p>
+    <input type="text" id="inputString" placeholder="Enter a word or phrase">
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+    <p id="result"></p>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Title Case Converter</h1>
+  <p>Enter a string to convert the first letter of each word to uppercase:</p>
+  <input type="text" id="inputString" placeholder="Enter a string">
+  <button onclick="displayTitleCase()">Convert to Title Case</button>
+  <p id="ans"></p>
+
+
+  <br>
+  <br>
+  <br>
+
+  <h1>Longest Word Finder</h1>
+  <p>Enter a string to find the longest word:</p>
+    <input type="text" id="userInput" placeholder="Enter a string">
+    <button onclick="showLongestWord()">Find Longest Word</button>
+    <p id="outputResult"></p>
+
+    <br>
+    <br>
+
+    <h1>Letter Occurrence Counter</h1>
+  <p>Enter a string and a letter to count the occurrences of the letter in the string:</p>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <input type="text" id="inputLetter" placeholder="Enter a letter" maxlength="1">
+    <button onclick="showOccurrences()">Count Occurrences</button>
+    <p id="output"></p>
+
+    <br>
+    <br>
+
+  <h1>Circle Properties Calculator</h1>
+  <p>Enter the radius of the circle to calculate its properties:</p>
+  <input type="number" id="radiusInput" placeholder="Enter radius" min="0">
+  <button onclick="calculateCircleProperties()">Calculate Properties</button>
+  <p id="circumferenceResult"></p>
+  <p id="areaResult"></p>
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
